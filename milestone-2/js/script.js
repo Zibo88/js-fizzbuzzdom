@@ -5,17 +5,22 @@
 
 const numberContainer = document.querySelector ('.number-container');
 const listItem = `<div class="box"></div>`;
-for(i = 1; i <= 100; i++){
+
+for (i = 1 ; i <= 100; i++) {
     let myNumber = i;
-    if (i % 5 === 0) {
+    if(i % 5 === 0 && i % 3 === 0){
+        myNumber += ' FizzBuzz'
+        
+    } else if (i % 5 === 0) {
     myNumber += ' Buzz';
+    
     } else if (i % 3 === 0) {
         myNumber += ' Fizz';
     }
     numberContainer.innerHTML += listItem + myNumber; 
+
+    
 }
-
-
 
 
 
