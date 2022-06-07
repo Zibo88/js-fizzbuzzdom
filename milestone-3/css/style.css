@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #083b4b;
+}
+
+.number-container {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.number-container h1{
+    text-align: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    
+}
+
+.bcg-green {
+    background-color: lightgreen;
+}
+
+.bcg-yellow {
+    background-color: yellow;
+}
+
+
+
+.bcg-square {
+    background-color: #1289b2;
+}
