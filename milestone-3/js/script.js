@@ -22,15 +22,13 @@ for (i = 1 ; i <= 100; i++) {
 
     let colorSquare = '';
 
-   let myNumber = i;
+    let myNumber = i;
     if(i % 5 === 0 && i % 3 === 0){
         myNumber = ' FizzBuzz'
         colorSquare = 'bcg-green';
-        
     } else if (i % 5 === 0) {
     myNumber = ' Buzz';
     colorSquare = `bcg-yellow`;
-    
     } else if (i % 3 === 0) {
         myNumber = ' Fizz';
         colorSquare = `bcg-coral`;
@@ -40,7 +38,7 @@ for (i = 1 ; i <= 100; i++) {
    
 
     // creare square
-    let newSquare = `<div class="square ${colorSquare}">${i}</div>`;
+    let newSquare = `<div class="square ${colorSquare}">${myNumber}</div>`;
     // concatenazione degli square
     numberContainer.innerHTML += newSquare;
   
