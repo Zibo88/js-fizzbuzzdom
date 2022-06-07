@@ -16,7 +16,7 @@
 
 
 const numberContainer = document.querySelector('.number-container');
-console.log(numbersContainer);
+
 for(let i = 0; i <= 100; i ++){
     let colorSquare = document.querySelector('.bcg-square');
     console.log(colorSquare);
