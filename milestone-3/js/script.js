@@ -20,15 +20,15 @@ const numberContainer = document.querySelector('.number-container');
 
 for (i = 1 ; i <= 100; i++) {
 
-    let colorSquare = '';
+    let colorSquare;
 
     let myNumber = i;
     if(i % 5 === 0 && i % 3 === 0){
         myNumber = ' FizzBuzz'
         colorSquare = 'bcg-green';
     } else if (i % 5 === 0) {
-    myNumber = ' Buzz';
-    colorSquare = `bcg-yellow`;
+        myNumber = ' Buzz';
+        colorSquare = `bcg-yellow`;
     } else if (i % 3 === 0) {
         myNumber = ' Fizz';
         colorSquare = `bcg-coral`;

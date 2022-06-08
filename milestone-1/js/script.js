@@ -9,17 +9,20 @@
 // numeri da 1 a 100;
 
 for (i = 1 ; i <= 100; i++) {
-    let myNumber = i;
+    let myNumber;
     if(i % 5 === 0 && i % 3 === 0){
-        myNumber += ' FizzBuzz'
+        myNumber = ' FizzBuzz'
         
     } else if (i % 5 === 0) {
-    myNumber += ' Buzz';
+    myNumber = ' Buzz';
     
     } else if (i % 3 === 0) {
-        myNumber += ' Fizz';
+        myNumber = ' Fizz';
+    } else {
+        myNumber = i;   
     }
 
+    // stampare
     console.log(myNumber);
     
 }

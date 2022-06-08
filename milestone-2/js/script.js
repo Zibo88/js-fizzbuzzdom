@@ -9,14 +9,14 @@ const listItem = `<div class="box"></div>`;
 for (i = 1 ; i <= 100; i++) {
     let myNumber = i;
     if(i % 5 === 0 && i % 3 === 0){
-        myNumber += ' FizzBuzz'
-        
+        myNumber = ' FizzBuzz'  
     } else if (i % 5 === 0) {
-    myNumber += ' Buzz';
-    
+        myNumber = ' Buzz';
     } else if (i % 3 === 0) {
-        myNumber += ' Fizz';
+        myNumber = ' Fizz';
     }
+
+    // così stampi sul dom
     numberContainer.innerHTML += listItem + myNumber; 
 
     
